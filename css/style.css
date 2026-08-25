@@ -85,6 +85,11 @@ a {
         bottom: 0;
     }
 }
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 25px;
+    }
+}
 .btn {
     background-color: var(--main-color);
     color: white;
@@ -220,7 +225,7 @@ a {
     gap: 40px;
     position: relative;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .home .container {
         padding-top: 40px;
         flex-direction: column;
@@ -231,7 +236,6 @@ a {
     }
     .home .container .form {
         width: 100%;
-        min-width: auto;
     }
 }
 .home p {
@@ -244,6 +248,7 @@ a {
     background-color: white;
     border-top: 8px solid var(--main-color);
     width: 500px;
+    max-width: 100%;
     padding: 25px;
 }
 .home .form h2 {
@@ -426,11 +431,6 @@ a {
     align-items: center;
     margin-top: 60px;
 }
-@media (max-width: 767px) {
-    .contact .container {
-        flex-direction: column;
-    }
-}
 .contact .container .map {
     width: 49%;
     height: 400px;
@@ -445,7 +445,11 @@ a {
     flex-direction: column;
     width: 49%;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+    .contact .container {
+        flex-direction: column;
+        width: 80%;
+    }
     .contact .container .map {
         width: 100%;
         margin-bottom: 20px;

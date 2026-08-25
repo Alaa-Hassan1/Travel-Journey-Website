@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Journey</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="header">
+        <div class="container">
+            <a href="" class="logo-link">
+                <i class="fa-solid fa-plane logo"></i>
+                <h1>Journey</h1>
+            </a>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle">
+                    <i class="fas fa-bars toggle-menu"></i>
+                </label>
+
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#destinations">Top Destination</a></li>
+                    <li><a href="#recommended">Recommended Places</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Hero -->
+    <div class="home" id="home">
+        <div class="container">
+            <p>Planning a Trip To Anywhere In The World ?</p>
+
+            <div class="form">
+                <h2>Book Your Trip</h2>
+
+                <form action="">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+
+                    <label for="destination">Choose Your Destination</label>
+                    <select id="destination">
+                        <option value="paris">Paris, France</option>
+                        <option value="london">London, England</option>
+                        <option value="new-york">New York, USA</option>
+                        <option value="dubai">Dubai, UAE</option>
+                        <option value="istanbul">Istanbul, Turkey</option>
+                        <option value="rome">Rome, Italy</option>
+                        <option value="barcelona">Barcelona, Spain</option>
+                        <option value="bali">Bali, Indonesia</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="tokyo">Tokyo, Japan</option>
+                    </select>
+
+                    <div class="date">
+                        <div class="In">
+                            <label for="date-in">Check In Date</label>
+                            <input type="date" id="date-in">
+                        </div>
+
+                        <div class="Out">
+                            <label for="date-out">Check Out Date</label>
+                            <input type="date" id="date-out">
+                        </div>
+                    </div>
+
+                    <label for="rooms">How many rooms?</label>
+                    <select id="rooms">
+                        <option>1 Room</option>
+                        <option>2 Rooms</option>
+                        <option>3 Rooms</option>
+                        <option>4 Rooms</option>
+                        <option>5 Rooms</option>
+                        <option>6 Rooms</option>
+                        <option>7 Rooms</option>
+                        <option>8 Rooms</option>
+                        <option>9 Rooms</option>
+                        <option>10 Rooms</option>
+                    </select>
+
+                    <div class="person">
+                        <div class="adult">
+                            <label for="adult">Adults</label>
+                            <select id="adult">
+                                <option value="1">1 Adult</option>
+                                <option value="2">2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                                <option value="5">5 Adults</option>
+                                <option value="6">6 Adults</option>
+                            </select>
+                        </div>
+
+                        <div class="children">
+                            <label for="children">Children</label>
+                            <select id="children">
+                                <option value="0">0 Children</option>
+                                <option value="1">1 Child</option>
+                                <option value="2">2 Children</option>
+                                <option value="3">3 Children</option>
+                                <option value="4">4 Children</option>
+                                <option value="5">5 Children</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <input class="btn" type="submit" value="Check Availability">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Start destinations -->
+    <div class="destinations" id="destinations">
+        <h2 class="main-title">Featured Destinations</h2>
+        <div class="container">
+            <p>Explore our most popular destinations and find the perfect place for your next journey.</p>
+            <div class="boxs">
+                <div class="box">
+                    <img src="imgs/tm-img-01.jpg" alt="europe">
+                    <div class="text">
+                        <h3>Europe's most visited places</h3>
+                        <p>
+                            Explore some of Europe’s most visited destinations and discover a perfect
+                            mix of history, culture, and breathtaking scenery. From charming streets
+                            and famous landmarks to beautiful coastlines and unforgettable cities,
+                            Europe offers a unique experience for every traveler.
+                        </p>
+                    </div>
+                    <a href="#" class="explore">
+                        <span>Explore</span>
+                        <i class="fa-regular fa-circle-right"></i>
+                    </a>
+                </div>
+
+                <div class="box box-2">
+                    <img src="imgs/tm-img-02.webp" alt="america">
+                    <div class="text">
+                        <h3>America's most famous places</h3>
+                        <p>
+                            Discover America’s most famous destinations and experience its exciting
+                            cities, beautiful landscapes, and diverse attractions. Whether you enjoy
+                            exploring vibrant streets, natural wonders, or iconic landmarks, there is
+                            always something new and unforgettable to discover.
+                        </p>
+                    </div>
+                    <a href="#" class="explore">
+                        <span>Explore</span>
+                        <i class="fa-regular fa-circle-right"></i>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="imgs/tm-img-03.jpg" alt="Asia">
+                    <div class="text">
+                        <h3>Asia's most popular places</h3>
+                        <p>
+                            Explore the beauty and diversity of Asia through its rich cultures,
+                            stunning landscapes, and unforgettable destinations. From modern cities
+                            and ancient temples to peaceful beaches and breathtaking nature, Asia
+                            offers amazing experiences for every type of traveler.
+                        </p>
+                    </div>
+                    <a href="#" class="explore">
+                        <span>Explore</span>
+                        <i class="fa-regular fa-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End destinations -->
+
+    <!-- Start Recommended Places -->
+    <div class="places" id="recommended">
+        <h2 class="main-title">Recommended Places</h2>
+        <div class="container">
+            <div class="box">
+                <img src="imgs/tm-img-06.jpg" alt="">
+                <div class="text">
+                    <h3>Grand Europe Hotel</h3>
+                    <span>Venecia, Italy</span>
+                    <p>
+                        Enjoy a relaxing stay in Venice, surrounded by beautiful beaches, historic
+                        canals, and stunning views. Discover the charm of Italy while enjoying a
+                        comfortable and memorable experience.
+                    </p>
+                    <a class="foot" href="#">
+                        <span>$330</span>
+                        <i class="fa-solid fa-money-bill-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imgs/tm-img-04.jpg" alt="">
+                <div class="text">
+                    <h3>Grand Resort Pasha</h3>
+                    <span>Istanbul, Turkey</span>
+                    <p>
+                        Experience a peaceful stay with beautiful waterfront views in Istanbul.
+                        Explore the city's rich history, famous landmarks, and enjoy its unique
+                        atmosphere while relaxing in comfort.
+                    </p>
+                    <a class="foot" href="#">
+                        <span>$340</span>
+                        <i class="fa-solid fa-money-bill-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imgs/tm-img-07.jpg" alt="">
+                <div class="text">
+                    <h3>Paris City Hotel</h3>
+                    <span>Paris, France</span>
+                    <p>
+                        Discover the beauty of Paris while staying close to its famous attractions.
+                        Enjoy charming streets, stunning city views, and the unforgettable
+                        atmosphere of the City of Light.
+                    </p>
+                    <a class="foot" href="#">
+                        <span>$350</span>
+                        <i class="fa-solid fa-money-bill-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imgs/tm-img-05.jpg" alt="">
+                <div class="text">
+                    <h3>Riverside City Hotel</h3>
+                    <span>Barcelona, Spain</span>
+                    <p>
+                        Enjoy a memorable stay surrounded by beautiful riverside views and iconic
+                        city landmarks. Explore charming streets, experience the city's vibrant
+                        atmosphere, and discover its beauty day and night.
+                    </p>
+                    <a class="foot" href="#">
+                        <span>$360</span>
+                        <i class="fa-solid fa-money-bill-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Recommended Places -->
+
+    <!-- Start Contact Us -->
+    <div class="contact" id="contact">
+        <h2 class="main-title">Contact Us</h2>
+
+        <div class="container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <form action="">
+                <input type="text" placeholder="NAME">
+                <input type="email" placeholder="EMAIL">
+                <input type="text" placeholder="SUBJECT">
+                <textarea placeholder="MESSAGE"></textarea>
+                <input class="btn" type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start footer -->
+    <footer class="footer">
+        Copyright &copy; 2026 Your Company . Designed by <span>Template Alaa</span>
+    </footer>
+    <!-- End footer -->
+</body>
+
+</html>

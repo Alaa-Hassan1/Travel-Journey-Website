@@ -134,6 +134,9 @@ a {
     .header .logo-link h1 {
         font-size: 25px;
     }
+    .header .logo-link .logo{
+        margin-right: 10px;
+    }
 }
 .header ul {
     display: flex;

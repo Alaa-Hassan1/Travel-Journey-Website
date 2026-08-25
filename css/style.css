@@ -130,6 +130,11 @@ a {
 .header .logo-link h1:hover {
     color: var(--main-color);
 }
+@media (max-width: 767px) {
+    .header .logo-link h1 {
+        font-size: 25px;
+    }
+}
 .header ul {
     display: flex;
 }

@@ -103,6 +103,11 @@ a {
 .btn:hover {
     background-color: var(--main-color-alt);
 }
+@media (max-width: 767px) {
+    .btn {
+        font-size: 18px;
+    }
+}
 /* Start Header */
 .header {
     background-color: black;
@@ -137,7 +142,7 @@ a {
 }
 @media (max-width: 767px) {
     .header .logo-link h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
     .header .logo-link .logo{
         margin-right: 10px;
@@ -225,19 +230,6 @@ a {
     gap: 40px;
     position: relative;
 }
-@media (max-width: 991px) {
-    .home .container {
-        padding-top: 40px;
-        flex-direction: column;
-    }
-    .home .container p {
-        font-size: 30px;
-        text-align: center;
-    }
-    .home .container .form {
-        width: 100%;
-    }
-}
 .home p {
     max-width: 450px;
     color: white;
@@ -248,7 +240,6 @@ a {
     background-color: white;
     border-top: 8px solid var(--main-color);
     width: 500px;
-    max-width: 100%;
     padding: 25px;
 }
 .home .form h2 {
@@ -282,6 +273,27 @@ a {
 .home .person > div {
     width: 48%;
 }
+@media (max-width: 991px) {
+    .home .container {
+        padding-top: 60px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home p {
+        font-size: 32px;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .home .form {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+/* End Home */
+
+
 /* End Home */
 
 /* Start Destinations */
@@ -357,7 +369,7 @@ a {
 }
 .places .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin-top: 60px;
 }
@@ -374,17 +386,11 @@ a {
     width: 45%;
     object-fit: cover;
 }
-@media (max-width: 767px) {
-    .places .container {
-        grid-template-columns: 1fr;
-    }
-    .places .box {
-        flex-direction: column;
-        width: 100%;
-    }
-    .places .box img {
-        width: 100%;
-    }
+.places .box .text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
 }
 .places .box .text h3 {
     margin: 20px 15px 5px;
@@ -400,23 +406,41 @@ a {
 .places .box .foot {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     font-size: 20px;
     color: white;
+    margin-top: auto;
 }
 .places .box .foot span {
     flex: 1;
+    display: flex;
+    align-items: center;
     background-color: var(--main-color);
     padding: 20px;
 }
 .places .box .foot i {
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #C86E98;
-    padding: 18.5px 30px;
+    padding: 0;
     font-size: 26px;
     transition: var(--main-transition);
+}
+@media (max-width: 991px) {
+    .places .container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 767px) {
+    .places .box {
+        flex-direction: column;
+        width: 100%;
+    }
+    .places .box img {
+        width: 100%;
+    }
 }
 /* End Recommended Places */
 
